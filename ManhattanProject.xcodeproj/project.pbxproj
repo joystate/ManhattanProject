@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		053A3192207AD5CE00D5B627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A3191207AD5CE00D5B627 /* AppDelegate.swift */; };
-		053A3194207AD5CE00D5B627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A3193207AD5CE00D5B627 /* ViewController.swift */; };
+		053A3194207AD5CE00D5B627 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A3193207AD5CE00D5B627 /* MainViewController.swift */; };
 		053A3197207AD5CE00D5B627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053A3195207AD5CE00D5B627 /* Main.storyboard */; };
 		053A3199207AD5D100D5B627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053A3198207AD5D100D5B627 /* Assets.xcassets */; };
 		053A319C207AD5D100D5B627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053A319A207AD5D100D5B627 /* LaunchScreen.storyboard */; };
 		053A31A7207AD5D100D5B627 /* ManhattanProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A31A6207AD5D100D5B627 /* ManhattanProjectTests.swift */; };
 		053A31B2207AD5D100D5B627 /* ManhattanProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A31B1207AD5D100D5B627 /* ManhattanProjectUITests.swift */; };
+		053A31C0207ADE1E00D5B627 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A31BF207ADE1E00D5B627 /* PaymentViewController.swift */; };
+		053A31C2207AE5E100D5B627 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 053A31C1207AE5E100D5B627 /* JosefinSans-SemiBold.ttf */; };
+		053A31C4207AE69000D5B627 /* goudy_bookletter_1911.otf in Resources */ = {isa = PBXBuildFile; fileRef = 053A31C3207AE69000D5B627 /* goudy_bookletter_1911.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		053A318E207AD5CE00D5B627 /* ManhattanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManhattanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		053A3191207AD5CE00D5B627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		053A3193207AD5CE00D5B627 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		053A3193207AD5CE00D5B627 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		053A3196207AD5CE00D5B627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		053A3198207AD5D100D5B627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		053A319B207AD5D100D5B627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		053A31AD207AD5D100D5B627 /* ManhattanProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManhattanProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		053A31B1207AD5D100D5B627 /* ManhattanProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManhattanProjectUITests.swift; sourceTree = "<group>"; };
 		053A31B3207AD5D100D5B627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053A31BF207ADE1E00D5B627 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		053A31C1207AE5E100D5B627 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		053A31C3207AE69000D5B627 /* goudy_bookletter_1911.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = goudy_bookletter_1911.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,9 @@
 		053A3190207AD5CE00D5B627 /* ManhattanProject */ = {
 			isa = PBXGroup;
 			children = (
+				053A31C6207AE88E00D5B627 /* ViewControllers */,
+				053A31C5207AE87000D5B627 /* fonts */,
 				053A3191207AD5CE00D5B627 /* AppDelegate.swift */,
-				053A3193207AD5CE00D5B627 /* ViewController.swift */,
 				053A3195207AD5CE00D5B627 /* Main.storyboard */,
 				053A3198207AD5D100D5B627 /* Assets.xcassets */,
 				053A319A207AD5D100D5B627 /* LaunchScreen.storyboard */,
@@ -123,6 +130,24 @@
 				053A31B3207AD5D100D5B627 /* Info.plist */,
 			);
 			path = ManhattanProjectUITests;
+			sourceTree = "<group>";
+		};
+		053A31C5207AE87000D5B627 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				053A31C3207AE69000D5B627 /* goudy_bookletter_1911.otf */,
+				053A31C1207AE5E100D5B627 /* JosefinSans-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		053A31C6207AE88E00D5B627 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				053A3193207AD5CE00D5B627 /* MainViewController.swift */,
+				053A31BF207ADE1E00D5B627 /* PaymentViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +257,8 @@
 				053A319C207AD5D100D5B627 /* LaunchScreen.storyboard in Resources */,
 				053A3199207AD5D100D5B627 /* Assets.xcassets in Resources */,
 				053A3197207AD5CE00D5B627 /* Main.storyboard in Resources */,
+				053A31C2207AE5E100D5B627 /* JosefinSans-SemiBold.ttf in Resources */,
+				053A31C4207AE69000D5B627 /* goudy_bookletter_1911.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				053A3194207AD5CE00D5B627 /* ViewController.swift in Sources */,
+				053A3194207AD5CE00D5B627 /* MainViewController.swift in Sources */,
+				053A31C0207ADE1E00D5B627 /* PaymentViewController.swift in Sources */,
 				053A3192207AD5CE00D5B627 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +459,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRT3YS6M8P;
 				INFOPLIST_FILE = ManhattanProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +478,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRT3YS6M8P;
 				INFOPLIST_FILE = ManhattanProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
