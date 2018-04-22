@@ -35,12 +35,15 @@ class PaymentViewController: UIViewController, WKNavigationDelegate {
         guard let url = url else {
             return
         }
-        let webConfiguration = WKWebViewConfiguration()
-        webView = WKWebView(frame: webViewContainer.frame, configuration: webConfiguration)
-        webViewContainer.addSubview(webView!)
-        webView.alpha = 0
-        webView.navigationDelegate = self
-        webView.load(URLRequest(url: url))
+        print("called")
+        if webView == nil {
+            let webConfiguration = WKWebViewConfiguration()
+            webView = WKWebView(frame: webViewContainer.frame, configuration: webConfiguration)
+            webViewContainer.addSubview(webView!)
+            webView.alpha = 0
+            webView.navigationDelegate = self
+            webView.load(URLRequest(url: url))
+        }
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
