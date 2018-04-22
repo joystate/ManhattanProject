@@ -111,14 +111,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="eMt-yf-jV7">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13A-T7-Ejw">
                                 <rect key="frame" x="0.0" y="20" width="375" height="597"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMW-bT-MgD">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
@@ -156,20 +152,20 @@
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KMp-48-M36" firstAttribute="centerX" secondItem="lJB-X2-NuA" secondAttribute="centerX" id="31G-av-X6J"/>
-                            <constraint firstItem="eMt-yf-jV7" firstAttribute="top" secondItem="lJB-X2-NuA" secondAttribute="top" id="AGf-lT-bcP"/>
+                            <constraint firstItem="lJB-X2-NuA" firstAttribute="top" secondItem="13A-T7-Ejw" secondAttribute="top" id="EF7-P6-T4A"/>
                             <constraint firstItem="lJB-X2-NuA" firstAttribute="bottom" secondItem="PMW-bT-MgD" secondAttribute="bottom" id="GR3-a6-MUI"/>
-                            <constraint firstItem="eMt-yf-jV7" firstAttribute="leading" secondItem="lJB-X2-NuA" secondAttribute="leading" id="RGt-37-WK7"/>
-                            <constraint firstItem="lJB-X2-NuA" firstAttribute="trailing" secondItem="eMt-yf-jV7" secondAttribute="trailing" id="SCg-IM-rkk"/>
+                            <constraint firstItem="13A-T7-Ejw" firstAttribute="trailing" secondItem="lJB-X2-NuA" secondAttribute="trailing" id="NNG-Me-0sc"/>
                             <constraint firstItem="lJB-X2-NuA" firstAttribute="trailing" secondItem="PMW-bT-MgD" secondAttribute="trailing" id="eaA-mu-ozp"/>
-                            <constraint firstItem="eMt-yf-jV7" firstAttribute="bottom" secondItem="PMW-bT-MgD" secondAttribute="top" id="m3k-Bu-Kz3"/>
+                            <constraint firstItem="lJB-X2-NuA" firstAttribute="leading" secondItem="13A-T7-Ejw" secondAttribute="leading" id="hCn-1T-Q3k"/>
                             <constraint firstItem="KMp-48-M36" firstAttribute="centerY" secondItem="lJB-X2-NuA" secondAttribute="centerY" id="o1q-qv-rus"/>
+                            <constraint firstItem="PMW-bT-MgD" firstAttribute="top" secondItem="13A-T7-Ejw" secondAttribute="bottom" id="ojf-Ya-CXM"/>
                             <constraint firstItem="PMW-bT-MgD" firstAttribute="leading" secondItem="lJB-X2-NuA" secondAttribute="leading" id="uj1-CS-uFy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lJB-X2-NuA"/>
                     </view>
                     <connections>
                         <outlet property="spinner" destination="KMp-48-M36" id="l9x-j9-fXj"/>
-                        <outlet property="webView" destination="eMt-yf-jV7" id="daO-8f-ewt"/>
+                        <outlet property="webViewContainer" destination="13A-T7-Ejw" id="Jz9-XR-uP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZw-Hg-WVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
